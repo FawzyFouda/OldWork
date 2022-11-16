@@ -1,0 +1,1402 @@
+:root{
+    --yel:#FFC603;
+    --baloo:Baloo
+}
+@font-face {
+    font-family: 'Baloo';
+        src: url('/fonts/Baloo/Baloo2-Medium.ttf') format('truetype'); }
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    font-family: var(--baloo);
+}
+
+/*--------------------phones-----------------*/
+
+
+header{
+    background-image: url('../images/banner.jpg');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: 0 -111px;
+}
+header #nav{
+    background-color: #000;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    top: 15px;
+}
+    
+.overlay{
+    background-color: #1e1a1a66;
+    padding: 20px;
+}
+
+header #nav .logo{
+    display: flex;
+    align-items: center;
+}
+header #nav .logo img{
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+header #nav .logo h1{
+    color: var(--yel);
+    font-style: italic;
+    text-transform: uppercase;
+    font-family: Baloo;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 4px;
+}
+header #nav .logo h1 span{
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-left: 4px;
+
+}
+
+header #nav nav label{
+    position: absolute;
+   top: 3px;
+   cursor: pointer;
+}
+
+
+header #nav nav input{
+    display: none;
+}
+
+header #nav nav ul li{
+    list-style-type: none;
+}
+header #banner button{
+    cursor: pointer;
+}
+header #banner button:hover{
+    background-color:#000 ;
+    color: #FFF;
+}
+#sec4 section button:hover{
+    background-color:#000 ;
+    color: #FFF;
+}
+#sec6 section form input:last-of-type:hover{
+    background-color:#000 ;
+    color: #FFF;
+}
+#sec6{
+    background-position:center
+}
+
+/*-----------------------sec1-------------------------*/
+
+@media(max-width: 576px){
+    .container{
+        width: 525px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
+        
+        
+        header #nav {
+            height: 23px;
+            position: relative;
+        }
+        header #nav nav{
+            display: flex;
+            justify-content: end;
+            
+        }
+        #check:checked + ul{
+        height: 200px;
+        border: 1px solid #3c373745;
+        }
+    
+        header #nav nav ul{
+            width: 150px;
+            height: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        box-shadow: 1px 1px 9px #000;
+        }
+        header #nav nav ul li:hover{
+        
+            box-shadow: rgb(0 0 0 / 55%) 1px 1px 3px;
+    
+        }
+        header #nav nav ul li a:hover{
+            color: #FFF;
+    }
+    
+    header #nav nav ul li a{
+        text-decoration: none;
+        color: #CD8383;
+        font-size: 13px;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: serif;
+        font-weight: 600;
+    }
+    header #nav nav ul .social{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+    header #nav nav ul .social li{
+        width: 25%;
+        text-align: center;
+    }
+    header #nav nav ul .social li i{
+        color: #FFF;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    header #nav nav ul .social li i:first-of-type:hover{
+        color: #0A80EC;
+    
+    }
+    header #nav nav ul .social li i:nth-of-type(2):hover{
+        color: #1D9BF0;
+    }
+    
+    
+    header #banner{
+        padding: 65px 0;
+    }
+    header #banner h2{
+        font-size: 8px;
+        font-family: Baloo;
+    }
+    header #banner h3{
+        font-family: var(--baloo); 
+        font-size: 1rem;
+        margin: 0;
+    }
+    header #banner h3 span{
+        color: #CD8383;
+        display: block;
+        
+    }
+    header #banner button{
+        font-family: serif;
+        font-size: 10px;
+        padding: 2px;
+        border-radius: 23px;
+        width: 60px;
+    }
+        #sec1{
+            background-color: #000;
+            padding-bottom: 65px;
+        }
+        #sec1 h2{
+            margin: 0;
+            color: var(--yel);
+            font-size: 3vw;
+            font-weight: 100;
+            font-family: var(--baloo);
+            text-align: center;
+            width: 100%;
+            padding-top: 65px;
+        }
+        #sec1 p{
+            margin: 0;
+            color: #FFF;
+            font-size: 2vw;
+            font-weight: 100;
+            text-align: justify;
+            font-family: var(--baloo);
+            width: 100%;
+            padding-top: 20px;
+            
+        }
+    
+        #sec2{
+            padding-bottom: 65px;
+        }
+        #sec2 h2{
+            background-image: url('../images/sep.png');
+            height: 60px;
+            color: #FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+        }
+        #sec2 article{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #sec2 article h3{
+            width: 100%;
+            font-size: 15px;
+        padding-left: 46px;
+        padding-top: 45px;
+        }
+        #sec2 article figure{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #000;
+            margin-top: 10px;
+        }
+        #sec2 article figure h4{
+           
+        background-size: 100px;
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        #sec2 article figure:first-of-type h4{
+            background-image: url(../images/card1.jpg);
+        }
+        #sec2 article figure:nth-of-type(2) h4{
+            background-image: url(../images/card2.jpg);
+        }
+        #sec2 article figure:last-of-type h4{
+            background-image: url(../images/card3.jpg);
+        }
+        #sec2 article figure h4 span{
+            font-size: 8px;
+        padding: 6px;
+        margin: 26px;
+        display: block;
+        width: 42px;
+        background-color: #0006;
+        border-radius: 6px;
+        color: #FFF;
+        }
+        #sec2 article figure  img{
+            width: 350px;
+            height: 230px;
+        }
+        #sec2 article figure figcaption{
+            margin: auto;
+            width: 356px;
+            margin-top: 20px;
+        }
+        #sec2 article figure figcaption h5{
+            color: var(--yel);
+        margin-bottom: 12px;
+        }
+        #sec2 article figure figcaption p{
+            color: #FFF;
+        font-size: 12px;
+        text-align: justify;
+        margin-bottom: 20px;
+        }
+    
+        #sec3{
+            background-color: #000;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-bottom: 65px;
+        }
+        #sec3 h2{
+            color: #FFF;
+            margin-top: 30px;
+            font-size: 17px;
+        width: 100%;
+        text-align: center;
+        }
+        #sec3 section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #sec3 section img{
+            width: 350px;
+            height: 230px;
+            margin-top: 30px;
+        }
+        
+        #sec4{
+            background-image: url('/images/sep.png');
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        #sec4 section{
+            padding:0 10px;
+            display: flex;
+            align-items: center;
+        }
+        #sec4 section div{
+            width: 50%;
+        }
+        #sec4 section h2{
+            font-size: 8px;
+            color: #ffffffb5;
+            margin-top: 12px;
+        }
+        #sec4 section h3{
+            color: #FFF;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+        #sec4 section .bttn{
+            width: 50%;
+            text-align: end;
+        }
+        #sec4 section button{
+            font-size: 7px;
+            padding: 6px;
+            border-radius: 27px;
+            width: 60px;
+            cursor: pointer;
+        
+        }
+        #sec5{
+            background-color: #000;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding-top: 65px;
+        }
+        #sec5 section:first-of-type h2{
+            width: 100%;
+            color: #FFF;
+            font-size: 17px;
+            padding-bottom: 20px;
+        }
+        #sec5 section:first-of-type p{
+            width: 100%;
+            color: #FFF;
+            font-size: 10px;
+            padding-bottom: 45px;
+            text-align: justify;
+        }
+        #sec5 section:nth-of-type(2){
+            width: 100%;
+        }
+        #sec5 section:nth-of-type(2) img{
+            width: 350px;
+        height: 230px;
+        }
+        #sec5 section:last-of-type{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #sec5 section:last-of-type article{
+            color: #FFF;
+            width: 34%;
+            margin: 20px 0;
+    
+        }
+        #sec5 section:last-of-type article h3{
+            font-size: 12px;
+            font-weight: 900;
+        }
+        #sec5 section:last-of-type article h4{
+            font-size: 10px;
+            padding-top: 10px
+        }
+        #sec5 section:last-of-type article h4 span{
+            font-size: 6px;
+            display: block;
+            padding-top: 10px
+        }
+    
+        #sec6{
+            background-image: url('/images/contactus.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 8px solid var(--yel);
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+    
+        #sec6 section h2{
+            color: #FFF;
+            width: 100%;
+            text-align: center;
+            font-size: 17px;
+            padding-bottom: 28px
+        }
+        #sec6 section{
+            display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        #sec6 section p{
+            color: #FFF;
+            font-size: 10px;
+            width: 100%;
+            text-align: justify;
+            padding-bottom: 28px
+        }
+    
+        #sec6 section form{
+            background-color: transparent;
+        border: 1px solid #FFC603;
+        box-shadow: 1px 1px 9px #ffc603;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 13px;
+        width: 32%;
+        text-align: center;
+        
+        }
+        #sec6 section form input{
+            padding: 5px;
+        padding-bottom: 8px;
+        margin-bottom: 13px;
+        border-radius: 2px;
+        font-size: 9px;
+        width: 138px;
+        }
+        #sec6 section form input:last-of-type{
+            font-size: 9px;
+            background-color: var(--yel);
+            cursor: pointer;
+        }
+        footer{
+            background-color: #000;
+            padding-top: 65px;
+        }
+        footer .footer{
+            display: flex;
+            justify-content: center;
+        }
+        footer .footer section{
+            width: 25%;
+        }
+        footer section a{
+            text-decoration: none;
+            font-size: 8px;
+            color: #FFF;
+            display: flex;
+            padding-bottom: 18px;
+        }
+        footer section a i{
+            padding-right:10px ;
+        }
+        footer section:last-of-type{
+            display: flex;
+        flex-wrap: wrap;
+    
+        }
+        footer section:last-of-type img{
+            width: 23px;
+        height: 18px;
+        margin-left: 0px;
+        }
+        footer section:last-of-type input{
+            height: 20px;
+        width: 100%;
+        background-color: transparent;
+        border-bottom: 1px solid #FFF;
+        font-size: 9px;
+        }
+        footer section:last-of-type button{
+            font-size: 7px;
+            padding: 5px;
+            border-radius: 30px;
+            width: 60px;
+            cursor: pointer;
+            height: 20px;
+        }
+    }
+
+@media(min-width: 576px) {
+    
+    .container{
+    width: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    header #nav {
+        height: 23px;
+        position: relative;
+    }
+    header #nav nav{
+        display: flex;
+        justify-content: end;
+        
+    }
+    #check:checked + ul{
+    height: 200px;
+    border: 1px solid #3c373745;
+    }
+
+    header #nav nav ul{
+        width: 150px;
+        height: 0;
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+    box-shadow: 1px 1px 9px #000;
+    }
+    header #nav nav ul li:hover{
+    
+        box-shadow: rgb(0 0 0 / 55%) 1px 1px 3px;
+
+    }
+    header #nav nav ul li a:hover{
+        color: #FFF;
+}
+
+header #nav nav ul li a{
+    text-decoration: none;
+    color: #CD8383;
+    font-size: 13px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: serif;
+    font-weight: 600;
+}
+header #nav nav ul .social{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+header #nav nav ul .social li{
+    width: 25%;
+    text-align: center;
+}
+header #nav nav ul .social li i{
+    color: #FFF;
+    font-size: 12px;
+    cursor: pointer;
+}
+header #nav nav ul .social li i:first-of-type:hover{
+    color: #0A80EC;
+
+}
+header #nav nav ul .social li i:nth-of-type(2):hover{
+    color: #1D9BF0;
+}
+
+
+header #banner{
+    padding: 65px 0;
+}
+header #banner h2{
+    font-size: 8px;
+    font-family: Baloo;
+}
+header #banner h3{
+    font-family: var(--baloo); 
+    font-size: 1rem;
+    margin: 0;
+}
+header #banner h3 span{
+    color: #CD8383;
+    display: block;
+    
+}
+header #banner button{
+    font-family: serif;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 23px;
+    width: 60px;
+}
+    #sec1{
+        background-color: #000;
+        padding-bottom: 65px;
+    }
+    #sec1 h2{
+        margin: 0;
+        color: var(--yel);
+        font-size: 3vw;
+        font-weight: 100;
+        font-family: var(--baloo);
+        text-align: center;
+        width: 100%;
+        padding-top: 65px;
+    }
+    #sec1 p{
+        margin: 0;
+        color: #FFF;
+        font-size: 2vw;
+        font-weight: 100;
+        text-align: justify;
+        font-family: var(--baloo);
+        width: 100%;
+        padding-top: 20px;
+        
+    }
+
+    #sec2{
+        padding-bottom: 65px;
+    }
+    #sec2 h2{
+        background-image: url('../images/sep.png');
+        height: 60px;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+    }
+    #sec2 article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #sec2 article h3{
+        width: 100%;
+        font-size: 15px;
+    padding-left: 46px;
+    padding-top: 45px;
+    }
+    #sec2 article figure{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #000;
+        margin-top: 10px;
+    }
+    #sec2 article figure h4{
+       
+    background-size: 100px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    #sec2 article figure:first-of-type h4{
+        background-image: url(../images/card1.jpg);
+    }
+    #sec2 article figure:nth-of-type(2) h4{
+        background-image: url(../images/card2.jpg);
+    }
+    #sec2 article figure:last-of-type h4{
+        background-image: url(../images/card3.jpg);
+    }
+    #sec2 article figure h4 span{
+        font-size: 8px;
+    padding: 6px;
+    margin: 26px;
+    display: block;
+    width: 42px;
+    background-color: #0006;
+    border-radius: 6px;
+    color: #FFF;
+    }
+    #sec2 article figure  img{
+        width: 350px;
+        height: 230px;
+    }
+    #sec2 article figure figcaption{
+        margin: auto;
+        width: 356px;
+        margin-top: 20px;
+    }
+    #sec2 article figure figcaption h5{
+        color: var(--yel);
+    margin-bottom: 12px;
+    }
+    #sec2 article figure figcaption p{
+        color: #FFF;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 20px;
+    }
+
+    #sec3{
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 65px;
+    }
+    #sec3 h2{
+        color: #FFF;
+        margin-top: 30px;
+        font-size: 17px;
+    width: 100%;
+    text-align: center;
+    }
+    #sec3 section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sec3 section img{
+        width: 350px;
+        height: 230px;
+        margin-top: 30px;
+    }
+    
+    #sec4{
+        background-image: url('/images/sep.png');
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    #sec4 section{
+        padding:0 10px;
+        display: flex;
+        align-items: center;
+    }
+    #sec4 section div{
+        width: 50%;
+    }
+    #sec4 section h2{
+        font-size: 8px;
+        color: #ffffffb5;
+        margin-top: 12px;
+    }
+    #sec4 section h3{
+        color: #FFF;
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    #sec4 section .bttn{
+        width: 50%;
+        text-align: end;
+    }
+    #sec4 section button{
+        font-size: 7px;
+        padding: 6px;
+        border-radius: 27px;
+        width: 60px;
+        cursor: pointer;
+    
+    }
+    #sec5{
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-top: 65px;
+    }
+    #sec5 section:first-of-type h2{
+        width: 100%;
+        color: #FFF;
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+    #sec5 section:first-of-type p{
+        width: 100%;
+        color: #FFF;
+        font-size: 10px;
+        padding-bottom: 45px;
+        text-align: justify;
+    }
+    #sec5 section:nth-of-type(2){
+        width: 100%;
+    }
+    #sec5 section:nth-of-type(2) img{
+        width: 350px;
+    height: 230px;
+    }
+    #sec5 section:last-of-type{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #sec5 section:last-of-type article{
+        color: #FFF;
+        width: 34%;
+        margin: 20px 0;
+
+    }
+    #sec5 section:last-of-type article h3{
+        font-size: 12px;
+        font-weight: 900;
+    }
+    #sec5 section:last-of-type article h4{
+        font-size: 10px;
+        padding-top: 10px
+    }
+    #sec5 section:last-of-type article h4 span{
+        font-size: 6px;
+        display: block;
+        padding-top: 10px
+    }
+
+    #sec6{
+        background-image: url('/images/contactus.jpg');
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 8px solid var(--yel);
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    #sec6 section h2{
+        color: #FFF;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        padding-bottom: 28px
+    }
+    #sec6 section{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    #sec6 section p{
+        color: #FFF;
+        font-size: 10px;
+        width: 100%;
+        text-align: justify;
+        padding-bottom: 28px
+    }
+
+    #sec6 section form{
+        background-color: transparent;
+    border: 1px solid #FFC603;
+    box-shadow: 1px 1px 9px #ffc603;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 13px;
+    width: 32%;
+    text-align: center;
+    
+    }
+    #sec6 section form input{
+        padding: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+    border-radius: 2px;
+    font-size: 9px;
+    width: 138px;
+    }
+    #sec6 section form input:last-of-type{
+        font-size: 8px;
+        background-color: var(--yel);
+        cursor: pointer;
+    }
+    footer{
+        background-color: #000;
+        padding-top: 65px;
+    }
+    footer .footer{
+        display: flex;
+        justify-content: center;
+    }
+    footer .footer section{
+        width: 25%;
+    }
+    footer section a{
+        text-decoration: none;
+        font-size: 8px;
+        color: #FFF;
+        display: flex;
+        padding-bottom: 18px;
+    }
+    footer section a i{
+        padding-right:10px ;
+    }
+    footer section:last-of-type{
+        display: flex;
+    flex-wrap: wrap;
+
+    }
+    footer section:last-of-type img{
+        width: 23px;
+    height: 18px;
+    margin-left: 0px;
+    }
+    footer section:last-of-type input{
+        height: 20px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #FFF;
+    font-size: 9px;
+    }
+    footer section:last-of-type button{
+        font-size: 7px;
+        padding: 5px;
+        border-radius: 30px;
+        width: 60px;
+        cursor: pointer;
+        height: 20px;
+    }
+}
+
+/*--------------------------------------------------------tablet----------------------------------------------*/
+@media(min-width: 768px) {
+    .container{
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header #nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    header #nav div{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header #nav .logo{
+        width:27%;
+        justify-content: start;
+    }
+    header #nav .logo img{
+        width: 19px;
+        height: 19px;
+    }
+    header #nav .logo h1{
+        font-size: 0.6rem;
+    }
+    header #nav nav{
+        width: 70%;
+    }
+    header #nav nav label{
+        display: none;
+    }
+    header #nav nav ul{
+        display: flex;
+        height: auto;
+        width: 100%;
+        overflow: visible;
+        background-color: transparent;
+        box-shadow: none;
+        align-items: center;
+        justify-content: end;
+
+    }
+    header #nav nav ul li a{
+        text-decoration: none;
+    color: #FFF;
+    font-size: 10px;
+    display: block;
+    padding: 0 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Baloo';
+    font-weight: 600;
+    }
+    header #nav nav ul li a:hover{
+        color: var(--yel);
+    }
+    header #nav nav ul .social{
+        padding: 0;
+    }
+    header #nav nav ul .social i{
+        padding-right: 20px;
+    }
+    header #nav nav ul li:nth-of-type(4){
+     padding-right: 20px;
+    }
+    header #banner{
+        padding:100px 0;
+    }
+    header #banner h2{
+        font-size: 10px;
+    }
+    header #banner h3{
+        font-size: 1.4rem;
+    }
+    header #banner button{
+        font-size: 11px;
+        padding: 4px;
+        width: 65px;
+    margin-top: 20px;
+    }
+    #sec1 h2{
+        text-align: start;
+    }
+
+    #sec2 article figure:first-of-type{
+       width: 100%;
+    }
+    #sec2 article figure:nth-of-type(2){
+        width: 49%;
+    }
+    #sec2 article figure:last-of-type{
+        width: 49%;
+    }
+    #sec2 article figure figcaption{
+        width: 80%;
+        margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    #sec2 article figure figcaption p {
+        margin-bottom: 13px;
+    }
+
+    #sec3 section img{
+        width: 270px;
+        height: auto;
+    }
+
+    #sec3 section img:nth-of-type(2),
+    #sec3 section img:nth-of-type(4),
+    #sec3 section img:nth-of-type(6),
+    #sec3 section img:nth-of-type(8){
+        padding-left: 15px;
+    }
+    #sec3 section img:nth-of-type(1),
+    #sec3 section img:nth-of-type(3),
+    #sec3 section img:nth-of-type(5),
+    #sec3 section img:nth-of-type(7){
+        padding-right: 15px;
+    }
+    #sec4 section button{
+        font-size: 10px;
+        padding: 5px;
+        width: 65px;
+    }
+    
+    #sec5 section:first-of-type p{
+        font-size: 12px;
+    }
+    #sec5 section:last-of-type article h3{
+        font-size: 18px;
+    }
+    #sec5 section:last-of-type article h4 span{
+        font-size: 8px;
+    }
+    #sec6{
+        background-image: url('/images/contactus.jpg');
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 8px solid var(--yel);
+        padding-bottom: 65px;
+        padding-top: 65px;
+    }
+    #sec6 section div{
+       
+    }
+    #sec6 section{
+        display: flex;
+    
+    }
+    #sec6 section div{
+      width: 50%;
+    }
+    #sec6 section div h2{
+        color: var(--yel);
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        padding-bottom: 28px
+    }
+    #sec6 section div p{
+        color: #FFF;
+        font-size: 12px;
+        width: 100%;
+        text-align: justify;
+        padding-bottom: 28px;
+        font-family:cursive
+    }
+
+    #sec6 section form{
+        background-color: transparent;
+    border: 1px solid #FFC603;
+    box-shadow: 1px 1px 9px #ffc603;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 13px;
+    width: 32%;
+    text-align: center;
+    margin-left: 100px;
+    
+    }
+    #sec6 section form input{
+        padding: 13px;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+    border-radius: 2px;
+    font-size: 10px;
+    width: 138px;
+    }
+    #sec6 section form input:last-of-type{
+        font-size: 8px;
+        background-color: var(--yel);
+        cursor: pointer;
+        margin: 0;
+    }
+    footer section a{
+        font-size: 10px;
+        color: #ffffff91;
+
+    }
+    footer section:first-of-type a:hover{
+        color: #FFF;
+    }
+    footer section:nth-of-type(2) a:first-of-type i:hover,
+    footer section:nth-of-type(2) a:nth-of-type(2) i:hover{
+        color: #0A80EC;
+    }
+    footer section:nth-of-type(2) a:last-of-type i:hover{
+        color: #dc0a0a;
+    }
+    footer section:last-of-type img {
+        width: 27px;
+    height: 21px;
+    margin-left: 6px;    
+    }
+    footer section:last-of-type button{
+        font-size: 10px;
+    padding: 4px;
+    width: 65px;
+    }
+    footer section:last-of-type button:hover{
+        background-color: #ffc603;
+        color: #000;
+    }
+}
+/*--------------------------------------------------------DeskTop----------------------------------------------*/
+@media (min-width:1200px){
+    .container{
+        width: 1100px;
+    }
+    header #nav{
+        height: 45px;
+    }
+    header #nav .logo img{
+        width: 32px;
+    height: 30px;
+    }
+    header #nav .logo h1{
+        font-size: 0.8rem;
+    }
+    header #nav .logo h1 span{
+        font-size: 1rem;
+    margin-bottom: 3px;
+    }
+    header #nav nav ul .social li{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #FFF;
+        text-align: center;
+        margin-right: 12px;
+        cursor: pointer;
+    }
+    header #nav nav ul .social li:hover{
+        border-color:  #1D9BF0;
+    }
+    header #nav nav ul .social i{
+        padding-right: 0;
+        width: 100%;
+    }
+    header #nav nav ul .social li i{
+        margin-top: 5px;
+    }
+    header #nav nav ul li a{
+        font-size: 13px;
+        font-weight: 100;
+
+    }
+    header #nav nav ul li a:hover{
+        color: var(--yel);
+    }
+    header #banner{
+        padding: 188px 0;
+    }
+    header #banner h2{
+        font-size: 15px;
+    }
+    header #banner h3{
+        font-size: 3rem;
+        line-height: 0.9;
+    }
+    header #banner button{
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 23px;
+        width: 110px;
+        margin-top: 30px;
+    }
+    #sec1 h2{
+        font-size: 2.5vw;
+        
+    }
+    #sec1 p{
+        font-size: 1vw;
+    }
+    #sec2 h2{
+        font-size: 31px;
+        height: 115px;
+    }
+    #sec2 article{
+        justify-content: space-between;
+    }
+    #sec2 article h3{
+        font-size: 27px;
+        font-weight: 100;
+        padding-left: 0;
+    }
+    #sec2 article figure{
+        width: 30%;
+    }
+    #sec2 article figure figcaption{
+        padding: 0 9px;
+    }
+
+    #sec2 article figure:first-of-type,
+    #sec2 article figure:nth-of-type(2),
+    #sec2 article figure:last-of-type{
+        width: 32%;
+}
+
+    #sec3 section{
+        justify-content: space-between;
+    }
+    #sec3 section img{
+        width: 255px;
+    }
+    #sec3 section img:nth-of-type(1), 
+    #sec3 section img:nth-of-type(3), 
+    #sec3 section img:nth-of-type(5){
+        padding-right: 0;
+    }
+    #sec3 section img:nth-of-type(2), 
+    #sec3 section img:nth-of-type(4), 
+    #sec3 section img:nth-of-type(6){
+        padding-left:0
+    }
+
+    #sec4 {
+        height: 115px;
+    }
+    #sec4 section h2{
+        font-size: 12px;
+        margin-top: 0;
+    }
+    #sec4 section h3{
+        font-size: 30px;
+    }
+    #sec4 section button{
+        font-size: 14px;
+    padding: 12px;
+    border-radius: 23px;
+    width: 110px;
+    }
+    #sec5 {
+        padding-bottom: 65px;
+    }
+    #sec5 section:first-of-type h2{
+        text-align: start;
+    font-weight: 100;
+    font-size: 31px;
+    }
+    #sec5 section:first-of-type p{
+        font-size: 18px;
+    }
+
+    #sec5 section:nth-of-type(2){
+        width: 50%;
+    }
+    #sec5 section:nth-of-type(2) img{
+        width: 64%;
+        height: auto;
+    }
+
+    #sec5 section:last-of-type{
+        width: 40%;
+        justify-content: space-between;
+    }
+    #sec5 section:last-of-type article{
+        text-align: start;
+    }
+
+    #sec5 section:last-of-type article h3{
+        font-size: 38px;
+        font-weight: 100;
+    }
+    #sec5 section:last-of-type article h4{
+        font-size: 15px;
+    }
+    #sec5 section:last-of-type article h4 span{
+        font-size: 13px;
+    display: block;
+    padding-top: 10px;
+    }
+    #sec6 section div h2{
+        text-align: start;
+    font-size: 33px;
+    }
+    #sec6 section div p{
+        line-height: 2;
+        font-size: 14px;
+
+    }
+
+    #sec6 section form{
+        background-color: transparent;
+    border: 1px solid #FFC603;
+    box-shadow: 1px 1px 9px #ffc603;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 13px;
+    width: 24%;
+    text-align: center;
+    margin-left: 100px;
+    }
+    #sec6 section form input{
+        padding: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 13px;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 80%;
+    height: 40px;
+    }
+    #sec6 section form input:last-of-type{
+        font-size: 12px;
+        padding-top: 9px;
+    }
+
+    footer section a{
+    font-size: 14px;
+    color: #ffffff96;
+    transition: all 0.5s ease;
+    }
+    footer section a:hover{
+        color: #FFF;
+    }
+    footer section:last-of-type img{
+        width: 44px;
+    height: 29px;
+    margin-right: 7px;
+    }
+    footer section:last-of-type input{
+        font-size: 13px;
+        width: 90%;
+        height: 27px;
+    }
+    footer section:last-of-type button{
+        font-size: 14px;
+    padding: 12px;
+    border-radius: 23px;
+    width: 110px;
+    height: 40px;
+    transition: all 0.5s ease;
+    }
+    footer section:last-of-type button:hover{
+        background-color: var(--yel);
+    }
+}
